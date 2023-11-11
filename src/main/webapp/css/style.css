@@ -1,0 +1,1101 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+:root {
+  --pink: #fc84b4;
+  --bluish: #26232a;
+  --grey: #8b9096;
+}
+a {
+  text-decoration: none;
+}
+.nav-header {
+  display: flex;
+}
+.logo-container {
+  display: flex;
+  width: 40%;
+}
+.logo > a {
+  display: block;
+  padding: 5px;
+  margin: 5px;
+  color: var(--bluish);
+}
+.menu {
+  width: 50%;
+}
+.menu ul {
+  display: flex;
+  list-style-type: none;
+}
+.menu li > a {
+  color: var(--bluish);
+  padding: 12px 15px;
+  display: block;
+  &:hover {
+    color: var(--pink);
+    border-bottom: 5px solid var(--pink);
+  }
+}
+
+.hamburger {
+  display: none;
+  padding: 15px;
+}
+.home > a {
+  display: none;
+  padding: 5px;
+  margin: 5px;
+  color: var(--bluish);
+}
+
+.hide {
+  display: none;
+}
+.socials {
+  width: 400px;
+  height: 80px;
+  margin-left: auto;
+  border-left: 100px solid transparent;
+  border-bottom: 80px solid var(--pink);
+}
+.socials ul {
+
+  list-style-type: none;
+
+}
+.socials li {
+  display: inline-block;
+  margin-right: 20px;
+  margin-top: 25px;
+}
+.socials li > a {
+  padding-top: 7px;
+  font-size: 20px;
+  color: #ffffff;
+  &:hover {
+    color: var(--bluish);
+  }
+}
+.socials li:first-child a {
+  background-color: white;
+  display: block;
+  padding: 3px;
+  text-align: center;
+  color: var(--pink);
+  width: 60px;
+  border-radius: 3px;
+  &:hover {
+    background-color: var(--bluish);
+    color: #ffffff;
+  }
+}
+.socials p {
+  border-left: 2px solid #ffffff;
+  height: 25px;
+}
+.beauty {
+  display: none;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  color: var(--bluish);
+}
+
+.banner {
+  width: 100%;
+  height: 550px;
+  background-image: url( "../images/Banner image.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+}
+.banner-container {
+  margin-left: 30px;
+  margin-top: 20px;
+}
+.banner-heading {
+  font-family: "Great Vibes";
+  color: var(--pink);
+  font-size: 50px;
+}
+.banner-subheading {
+  width: 100px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 60px;
+  color: #ffffff;
+  line-height: 50px;
+  font-weight: bold;
+  margin-top: 20px;
+}
+.banner-container p {
+  font-size: 15px;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #ffffff;
+  width: 50%;
+  margin-top: 20px;
+  line-height: 1.2;
+}
+.banner-container button {
+  border: none;
+  background-color: var(--pink);
+  width: 150px;
+  height: 40px;
+  margin-top: 20px;
+  font-size: 15px;
+  &:hover {
+    background-color: #ff0066;
+  }
+}
+.banner-container button > a {
+  color: #ffffff;
+}
+
+.categories {
+  display: flex;
+  width: 90%;
+  margin: 100px auto;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.categories-card {
+  width: 30%;
+  margin-top: 50px;
+  text-align: center;
+  transition: transform 0.2s;
+  &:hover{
+    transform: scale(1.1);
+  }
+}
+.categories-card img {
+  width: 100%;
+  height: 200px;
+}
+
+.categories-card p:nth-child(2) {
+  font-family: "Great Vibes";
+  color: var(--pink);
+  font-size: 40px;
+  margin-top: 10px;
+}
+.categories-card p:nth-child(3) {
+  font-size: 50px;
+  font-family: Arial, Helvetica, sans-serif;
+  margin-top: 10px;
+}
+.categories-card p:nth-child(4) {
+  font-size: 15px;
+  font-family: Arial, Helvetica, sans-serif;
+  color: var(--grey);
+  padding: 0 25px;
+  margin-top: 10px;
+}
+.categories-card button {
+  border: none;
+  background-color: var(--pink);
+  width: 150px;
+  height: 40px;
+  margin: 20px 0;
+  font-size: 15px;
+
+  &:hover {
+    background-color: #ff0066;
+  }
+}
+.categories-card button > a {
+  color: #ffffff;
+}
+
+.categories-card-bg {
+  background-image: url("../images/Home page/page1-img2.jpg");
+  background-position: center;
+  background-size: cover;
+  width: 30%;
+  margin-top: 50px;
+  text-align: center;
+  transition: transform 0.2s;
+  &:hover{
+    transform: scale(1.1);
+  }
+}
+.categories-card-bg p:nth-child(1) {
+  font-family: "Great Vibes";
+  color: var(--pink);
+  font-size: 40px;
+  margin-top: 100px;
+}
+.categories-card-bg p:nth-child(2) {
+  font-size: 50px;
+  color: #ffffff;
+  font-family: Arial, Helvetica, sans-serif;
+  margin-top: 10px;
+}
+.categories-card-bg p:nth-child(3) {
+  font-size: 15px;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #ffffff;
+  padding: 0 25px;
+  margin-top: 10px;
+}
+.categories-card-bg button {
+  border: none;
+  background-color: var(--pink);
+  width: 150px;
+  height: 40px;
+  margin: 20px 0;
+  font-size: 15px;
+  &:hover {
+    background-color: #ff0066;
+  }
+}
+.categories-card-bg button > a {
+  color: #ffffff;
+}
+.appointment {
+  background: linear-gradient(rgb(0, 0, 0, 0.7), rgb(0, 0, 0, 0.7)),
+    url("../images/Home page/parallax.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+  width: 100%;
+  height: 600px;
+  text-align: center;
+}
+.appointment-container p:nth-child(1) {
+  font-family: "Great Vibes";
+  color: var(--pink);
+  font-size: 80px;
+  margin-top: 100px;
+  padding-top: 100px;
+}
+.appointment-container p:nth-child(2) {
+  font-family: Arial, Helvetica, sans-serif;
+  color: #ffffff;
+  font-size: 80px;
+  font-weight: bold;
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+}
+.appointment-container p:nth-child(3) {
+  font-size: 20px;
+  color: #ffffff;
+  font-family: Arial, Helvetica, sans-serif;
+  width: 70%;
+  margin-left: auto;
+  margin-right: auto;
+}
+.appointment-container button {
+  border: none;
+  display: block;
+  background-color: var(--pink);
+  width: 50%;
+  height: 40px;
+  margin: 20px auto;
+  font-size: 15px;
+  &:hover {
+    background-color: #ff0066;
+  }
+}
+.appointment-container button > a {
+  color: #ffffff;
+}
+.welcome {
+  display: flex;
+  flex-wrap: wrap;
+  width: 90%;
+  margin: 100px auto;
+  gap: 20px;
+}
+.welcome-card {
+  width: 48%;
+}
+.welcome-card img {
+  width: 100%;
+}
+.welcome-card p:nth-child(1) {
+  font-family: "Great Vibes";
+  color: var(--pink);
+  font-size: 50px;
+  margin-top: 50px;
+}
+.welcome-card p:nth-child(2) {
+  font-size: 50px;
+  color: var(--bluish);
+  width: 50%;
+  font-family: Arial, Helvetica, sans-serif;
+  margin-left: 40px;
+  margin-top: -10px;
+  font-weight: bold;
+  line-height: 1;
+}
+.welcome-card p:nth-child(3) {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 15px;
+  margin-top: 10px;
+  color: var(--grey);
+}
+.about-home {
+  display: flex;
+  flex-wrap: wrap;
+  width: 90%;
+  margin: 100px auto;
+  justify-content: space-around;
+  gap: 20px;
+}
+.about-home div:first-child {
+  width: 25%;
+  line-height: 0.8;
+}
+.about-home div:last-child {
+  width: 70%;
+}
+.about-first-card p:nth-child(1) {
+  font-family: "Great Vibes";
+  color: var(--pink);
+  font-size: 50px;
+}
+.about-first-card p:nth-child(2) {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 50px;
+  font-weight: bold;
+  margin-top: -10px;
+  margin-left: 30px;
+  color: var(--bluish);
+  line-height: 1;
+}
+
+.about-second-card p:nth-child(1) {
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  font-size: 15px;
+  color: var(--bluish);
+  width: 80%;
+}
+.about-second-card p:nth-child(2) {
+  font-family: Arial, Helvetica, sans-serif;
+  color: var(--grey);
+  margin-top: 50px;
+  font-size: 15px;
+}
+.types {
+  display: flex;
+  justify-content: space-around;
+  width: 90%;
+  margin: 100px auto;
+  flex-wrap: wrap;
+}
+.types-card {
+  width: 20%;
+  border: 1px solid black;
+
+}
+.types-card div {
+  background-color: var(--pink);
+  width: 50px;
+  height: 50px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  border-radius: 50%;
+}
+.types-card div i {
+  margin-top: 15px;
+  font-size: 25px;
+}
+.types-card p:nth-child(2) {
+  font-weight: bold;
+  font-size: 15px;
+  margin-top: 10px;
+  color: var(--bluish);
+  font-family: Arial, Helvetica, sans-serif;
+}
+.types-card p:nth-child(3) {
+  color: var(--grey);
+  font-size: 15px;
+  margin-top: 15px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.gallery {
+  width: 90%;
+  margin: 100px auto;
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+}
+.gallery div {
+  width: 100%;
+}
+.gallery > div img {
+  width: 100%;
+  height: 100%;
+}
+footer {
+  display: flex;
+  justify-content: space-around;
+  margin: 0 auto;
+  flex-wrap: wrap;
+  background-color: var(--pink);
+}
+footer > div {
+  width: 30%;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  height: 250px;
+}
+footer div > ul {
+  list-style-type: none;
+}
+footer > div i {
+  font-size: 30px;
+  padding: 20px;
+}
+footer ul li {
+  font-size: 15px;
+  color: #ffffff;
+  font-family: Arial, Helvetica, sans-serif;
+}
+footer ul li:nth-child(1) {
+  font-size: 15px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+.nav-footer {
+  background-color: var(--bluish);
+}
+.nav-first-container {
+  display: flex;
+  padding-top: 20px;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.nav-first-container p {
+  font-size: 40px;
+  font-family: "Great Vibes";
+  color: var(--pink);
+  margin-left: 20px;
+}
+.nav-first-container div:last-child ul {
+  display: flex;
+  list-style-type: none;
+}
+.nav-first-container div:last-child a {
+  display: block;
+  margin-right: 20px;
+  font-size: 20px;
+  color: #ffffff;
+  &:hover{
+    color: var(--pink);
+  }
+}
+.nav-second-container {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 20px;
+  justify-content: space-between;
+}
+.nav-second-container p {
+  font-size: 15px;
+  color: #ffffff;
+  margin-bottom: 20px;
+  margin-left: 20px;
+}
+.nav-second-container span{
+    color: var(--pink);
+}
+.nav-second-container div:last-child ul {
+  display: flex;
+  list-style-type: none;
+}
+.nav-second-container div:last-child a {
+  display: block;
+  margin-right: 20px;
+  font-size: 20px;
+  color: #ffffff;
+  &:hover{
+    color: var(--pink);
+  }
+}
+.nav-footer hr {
+  width: 90%;
+  margin: 10px auto 0;
+}
+
+/* about page */
+
+.banner-about{
+  background-image: url('../images/banner-about.jpg');
+  background-position:center;
+  background-size: cover;
+  background-attachment: fixed;
+  width: 100%;
+  height: 250px;
+}
+.nav-links ul{
+  display: flex;
+  list-style-type: none;
+  justify-content: end;
+  margin-top: 50px;
+}
+.nav-links li:nth-child(2){
+  border-left: 1px solid #ffffff;
+  height: 30px;
+  margin-right: 30px;
+}
+.nav-links li>a{
+  display: block;
+  margin-right: 30px;
+  color: #ffffff;
+  &:hover{
+    color: var(--pink);
+  }
+}
+
+.about-beauty{
+  display: flex;
+  justify-content: space-around;
+  width: 90%;
+  flex-wrap: wrap;
+  margin: 100px auto;
+}
+.about-beauty img{
+  width: 100%;
+  height: 100%;
+}
+.about-beauty >div{
+  width: 45%;
+}
+.about-beauty-content p:nth-child(1){
+  font-family: "Great Vibes";
+  color: var(--pink);
+  font-size: 50px;
+  margin-top: 50px;
+}
+.about-beauty-content p:nth-child(2){
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 50px;
+  font-weight: bold;
+  margin-top: -10px;
+  margin-left: 30px;
+  color: var(--bluish);
+  line-height: 1;
+  width: 50%;
+}
+.about-beauty-content p:nth-child(3){
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  color: var(--bluish);
+  margin-top: 20px;
+}
+.about-beauty-content p:nth-child(4){
+  font-family: Arial, Helvetica, sans-serif;
+  color: var(--grey);
+  margin-top: 20px;
+}
+.professionals{
+  width: 90%;
+  margin: 100px auto;
+}
+.professionals-heading{
+  text-align: center;
+}
+.professionals-heading p:first-child{
+  font-family: "Great Vibes";
+  color: var(--pink);
+  font-size: 50px;
+  margin-top: 50px;
+}
+.professionals-heading p:last-child{
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 30px;
+  font-weight: bold;
+  color: var(--bluish);
+}
+.professionals-container{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+ 
+}
+
+.professionals-container div:first-child{
+  order: 1;
+}
+.professionals-container div:last-child{
+  order: -1;
+}
+.professionals-card{
+  width: 30%;
+  margin-top: 50px;
+  text-align: center;
+  transition: transform 0.2s;
+  &:hover{
+    transform: scale(1.1);
+  }
+}
+.professionals-container img{
+  width: 100%;
+}
+.professionals-card p:nth-child(2){
+  font-weight: bold;
+  color: var(--bluish);
+  margin-top: 20px;
+}
+.professionals-card p:nth-child(3){
+  color: var(--bluish);
+  margin-top: 10px;
+}
+.appointment-about{
+  background: linear-gradient(rgb(0, 0, 0, 0.7), rgb(0, 0, 0, 0.5)),
+    url("/images/About/parallax2.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+  width: 100%;
+  height: 550px;
+  text-align: center;
+}
+.appointment-about-container p:nth-child(1) {
+  font-family: "Great Vibes";
+  color: var(--pink);
+  font-size: 80px;
+  margin-top: 100px;
+  padding-top: 100px;
+}
+.appointment-about-container p:nth-child(2) {
+  font-family: Arial, Helvetica, sans-serif;
+  color: #ffffff;
+  font-size: 50px;
+  font-weight: bold;
+  width: 40%;
+  margin-left: auto;
+  margin-right: auto;
+}
+.appointment-about-container p:nth-child(3) {
+  font-size: 15px;
+  color: #ffffff;
+  font-family: Arial, Helvetica, sans-serif;
+  width: 70%;
+  margin-left: auto;
+  margin-right: auto;
+}
+.appointment-about-container button {
+  border: none;
+  display: block;
+  background-color: var(--pink);
+  width: 40%;
+  height: 40px;
+  margin: 20px auto;
+  font-size: 15px;
+  &:hover {
+    background-color: #ff0066;
+  }
+}
+.appointment-about-container button > a {
+  color: #ffffff;
+}
+.pricing{
+  width: 90%;
+  margin: 100px auto; 
+}
+.pricing-heading{
+  text-align: center;
+}
+.pricing-heading p:first-child{
+  font-family: "Great Vibes";
+  color: var(--pink);
+  font-size: 50px;
+  margin-top: 50px;
+}
+.pricing-heading p:last-child{
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 30px;
+  font-weight: bold;
+  color: var(--bluish);
+}
+.pricing-container{
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+.pricing-card{
+  width: 30%;
+  margin-top: 50px;
+}
+.pricing-card p:nth-child(1){
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  font-size: 50px;
+}
+.pricing-card p:nth-child(2){
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  font-size: 40px;
+  color: var(--pink);
+}
+.pricing-card ul{
+  list-style-type: none;
+  margin-top: 30px;
+}
+.pricing-card li{
+  color: var(--grey);
+}
+.pricing-card button {
+  border: none;
+  display: block;
+  background-color: var(--pink);
+  width: 80%;
+  height: 40px;
+  margin:20px 0 ;
+  font-size: 15px;
+  &:hover {
+    background-color: #ff0066;
+  }
+}
+.pricing-card  button > a {
+  color: #ffffff;
+}
+
+.brands{
+  background: linear-gradient(rgb(0, 0, 0, 0.7), rgb(0, 0, 0, 0.5)),
+  url("/images/About/parallax3.jpg");
+background-size: cover;
+background-attachment: fixed;
+width: 100%;
+height: 300px;
+text-align: center;
+display: flex;
+justify-content: space-around;
+align-items: center;
+flex-wrap: wrap;
+}
+.brands img{
+  width: 100%;
+}
+.brands >div{
+ width: 20%;
+}
+/* contact */
+.map{
+  width: 100%;
+}
+.contact{
+  display: flex;
+  justify-content: space-around;
+  width: 90%;
+  margin: 100px auto;
+  flex-wrap: wrap;
+}
+.contact>div:first-child{
+  width: 35%;
+}
+.contact>div:last-child{
+  width: 60%;
+}
+
+.contact>div:first-child p{
+  font-weight: bold;
+  color: var(--bluish);
+  margin-top: 20px;
+}
+.contact>div:first-child ul{
+  list-style-type: none;
+  margin-top: 5px;
+}
+.contact>div:first-child li{
+  color: var(--grey);
+}
+.contact>div:first-child i{
+  margin-right: 5px;
+}
+.contact>div:first-child a{
+  color: var(--pink);
+}
+.contact>div:first-child span{
+  color: var(--pink);
+}
+
+.contact>div:last-child>p:nth-child(1){
+  font-weight: bold;
+  color: var(--bluish);
+}
+.contact>div:last-child >p:nth-child(2){
+  margin-top: 20px;
+  color: var(--grey);
+}
+.input-container{
+  display: flex;
+  margin-top: 10px;
+  justify-content: space-between;
+  flex-wrap: wrap;
+ 
+}
+.input-group{
+  width: 30%;
+  margin-top: 10px;
+}
+.input-group>input{
+  font-size: 16px;
+  width: 100%;
+  padding: 8px 16px;
+  outline-color: var(--grey);
+  border: 1 px solid #8b9096;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.textarea-group>textarea{
+  width: 100%;
+  font-family: Arial, Helvetica, sans-serif;
+  margin-top: 10px;
+  font-size: 16px;
+  outline-color: var(--grey);
+  padding: 8px 16px;
+  border: 1 px solid #8b9096;
+}
+.contact label[for="checkbox"]{
+  color: var(--grey);
+  display: block;
+  margin-top: 20px;
+}
+.contact #checkbox{
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
+}
+.contact button{
+  border: none;
+  margin-top: 20px;
+  background-color: var(--pink);
+  color: #ffffff;
+  width: 100px;
+  height: 30px;
+  cursor: pointer;
+  &:hover{
+    background-color: #ff0066;
+  }
+}
+.contact form p{
+  color: red;
+}
+
+/* submit page */
+
+.submit-form{
+  background-color: var(--pink);
+  width: 40%;
+  margin: 100px auto;
+  text-align: center;
+  color: var(--bluish);
+}
+
+.submit-form p:first-child{
+  font-weight: bold;
+  padding: 20px;
+  font-size: 50px;
+}
+
+.submit-form p:last-child{
+  font-size: 15px;
+  padding: 20px;
+}
+
+@media screen and (min-width: 800px) {
+  .hamburger {
+    display: none;
+  }
+  .hide {
+    display: block;
+  }
+}
+@media screen and (max-width: 800px) {
+  .hamburger {
+    display: block;
+  }
+  .home > a {
+    display: block;
+  }
+  .beauty {
+    display: block;
+  }
+  .socials li:first-child {
+    display: none;
+  }
+  .logo {
+    display: none;
+  }
+  .nav-header {
+    display: block;
+  }
+  .logo-container {
+    width: 100%;
+  }
+  .menu {
+    width: 100%;
+    text-align: center;
+  }
+  .menu ul {
+    flex-direction: column;
+  }
+  .socials {
+    width: 100%;
+    height: 150px;
+    background-color: var(--pink);
+    border: 0;
+  }
+  .categories-card {
+    width: 100%;
+  }
+  .categories-card-bg {
+    width: 100%;
+  }
+  .appointment-container p:nth-child(1) {
+    font-size: 40px;
+  }
+  .appointment-container p:nth-child(2) {
+    font-size: 50px;
+  }
+  .welcome-card {
+    width: 100%;
+  }
+  .welcome-card p:nth-child(2) {
+    width: 80%;
+  }
+
+  .about-home div:first-child {
+    width: 100%;
+  }
+  .about-home div:last-child {
+    width: 100%;
+  }
+  .types-card {
+    width: 45%;
+    margin-top: 20px;
+  }
+  .gallery {
+    grid-template-columns: auto auto;
+  }
+
+  /* about page */
+  .banner-about{
+    height: 300px;
+  }
+  .about-beauty>div:first-child{
+    display: none;
+  }
+  .about-beauty >div{
+    width: 100%;
+  }
+  .about-beauty-content p:nth-child(1){
+    margin-top: 0;
+  }
+  .appointment-about-container p:nth-child(1) {
+    font-size: 40px;
+  }
+  .appointment-about-container p:nth-child(2) {
+    font-size: 25px;
+  }
+  .pricing-card p:nth-child(1){
+    font-size: 20px;
+  }
+  .pricing-card p:nth-child(2){
+    font-size: 20px;
+  }
+  .brands{
+    height: 500px;
+  }
+  .brands >div{
+    width: 40%;
+    margin-top: 20px;
+   }
+   .contact>div:first-child{
+    width: 90%;
+  }
+  .contact>div:last-child{
+    width: 90%;
+    margin-top: 100px;
+  }
+  .input-group{
+    width: 100%;
+  }
+  .submit-form p:first-child{
+    font-size: 20px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .banner {
+    height: 700px;
+  }
+  .banner-subheading {
+    font-size: 30px;
+  }
+  .appointment {
+    height: 700px;
+  }
+  .welcome-card p:nth-child(1) {
+    font-size: 20px;
+  }
+  .welcome-card p:nth-child(2) {
+    font-size: 20px;
+  }
+  .about-first-card p:nth-child(1) {
+    font-size: 20px;
+  }
+  .about-first-card p:nth-child(2) {
+    font-size: 20px;
+  }
+  .types-card {
+    width: 100%;
+  }
+  .gallery {
+    grid-template-columns: auto;
+  }
+  footer > div {
+    width: 100%;
+    height: 150px;
+  }
+  .nav-first-container p {
+    width: 100%;
+  }
+  .nav-first-container div {
+    width: 100%;
+  }
+  .nav-first-container div:last-child ul {
+    justify-content: flex-end;
+  }
+  .nav-second-container p {
+    width: 100%;
+  }
+  .nav-second-container div {
+    width: 100%;
+  }
+  .nav-second-container div:last-child ul {
+    justify-content: flex-end;
+  }
+  /* about page */
+  
+  .about-beauty-content p:nth-child(2){
+    font-size: 20px;
+    width: 70%;
+  }
+  .professionals-card{
+    width: 100%;
+}
+.professionals-heading p:nth-child(2){
+  font-size: 20px;
+}
+.appointment-about {
+  height: 700px;
+}
+.pricing-card{
+  width: 100%;
+}
+.brands{
+  height: 800px;
+}
+.brands >div{
+  width: 90%;
+}
+}
